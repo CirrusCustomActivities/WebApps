@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>SMS Custom Activity</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>    
-    <div class="slds-grid">
-    <font face="Arial">
-    <table>
-        <tr>
-            <td>
-                <h2>SMS text</h2>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <textarea maxlength="918" rows="4" cols="50" id="sms-text" placeholder="Write your SMS here ..."></textarea>
-            </td>
-        </tr>
-        <tr height="100"><td height="100"></td></tr>
-        <tr>
-            <td>
-                Configuration JSON
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <textarea id="configuration"></textarea>
-            </td>
-        </tr>
-    </table>
-    </font>
-    <script src="postmonger.js"></script>
-    <script src="activity.js"></script>
-</body>
+	<head>
+		<title>SMS Custom Activity (Github)</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="postmonger.js"></script>
+		<script src="activity.js"></script>
+	</head>
+	<body>    
+		<div class="slds-grid">
+            <main class="slds-col">            
+               <center>
+					<h2>SMS text</h2>
+					<br><br>
+					<form>
+						<textarea maxlength="918" rows="4" cols="50" id="sms-text" placeholder="Write your SMS here..."></textarea>
+					</form>
+				</center>
+            </main>
+		</div>
+	</body>
 </html>
