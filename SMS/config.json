@@ -5,9 +5,66 @@
         "category": "message"
     },
     "type": "REST",
+    "lang": {
+        "en-US": {
+			"name": "t-SMS",
+			"description": "t-SMS Custom Activity Webapp"
+        }
+    },
     "userInterface": {
-      "configInspector": {
-        "size": "medium"
-      }
+		"configInspector": {
+			"size": "medium"
+		}
+    },	
+    "arguments": {
+        "execute": {
+			"inArguments":[
+				{
+                    "emailAddress": "{{Contact.Default.Email}}",
+                    "mobile":  "{{Contact.Attribute.SMSActivity.MobileNumber}}",
+                    "SubscriberKey":  "{{Contact.Attribute.SMSActivity.SubscriberKey}}",
+                    "FirstName":  "{{Contact.Attribute.SMSActivity.FirstName}}",
+                    "LastName":  "{{Contact.Attribute.SMSActivity.LastName}}"
+                }									
+			],
+			"outArguments": [],
+			"url": "https://centra-test.telekom.de/smsservice/execute",
+			"verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 10000
+        }
+    },	
+    "configurationArguments": {
+		"save": {
+			"url": "https://centra-test.telekom.de/smsservice/save",
+			"verb": "POST",
+			"useJwt": false
+		},
+		"publish": {
+			"url": "https://centra-test.telekom.de/smsservice/publish",
+			"verb": "POST",
+			"useJwt": false
+		},
+		"stop": {
+			"url": "https://centra-test.telekom.de/smsservice/stop",
+			"verb": "POST",
+			"useJwt": false
+		},
+		"validate": {
+			"url": "https://centra-test.telekom.de/smsservice/validate",
+			"verb": "POST",
+			"useJwt": false
+		}
+    },	
+    "schema": {
+        "arguments": {
+            "execute": {
+				"inArguments": [],
+                "outArguments": []
+            }
+        }
     }
 }
