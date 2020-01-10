@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>SMS Custom Activity (Github)</title>
-		<link rel="stylesheet" href="css/styles.css">
-		<script src="postmonger.js"></script>
-		<script src="activity.js"></script>
-	</head>
-	<body>    
+
+<head>
+    <title>t-SMS Custom Activity</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/require.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var config = {
+                baseUrl: 'js'
+            };
+
+            var dependencies = [
+                'customActivity'
+            ];
+
+            require(config, dependencies);
+        })();
+    </script>
+
+</head>
+
+<body> 
 		<div class="slds-grid">
             <main class="slds-col">            
                <center>
-					<h1>Webapp from Github</h1>
-		       			<br><br>
-		       			<h2>SMS text</h2>
+					<h2>SMS text (Github)</h2>
 					<br><br>
 					<form>
 						<textarea maxlength="918" rows="4" cols="50" id="sms-text" placeholder="Write your SMS here..."></textarea>
@@ -20,5 +35,6 @@
 				</center>
             </main>
 		</div>
-	</body>
+</body>
+
 </html>
