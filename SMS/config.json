@@ -28,7 +28,7 @@
                 }									
 			],
 			"outArguments": [],
-			"url": "https://centra-test.telekom.de/smsservice/execute",
+			"url": "https://endpoint/execute",
 			"verb": "POST",
             "body": "",
             "header": "",
@@ -39,22 +39,22 @@
     },	
     "configurationArguments": {
 		"save": {
-			"url": "https://centra-test.telekom.de/smsservice/save",
+			"url": "https://endpoint/save",
 			"verb": "POST",
 			"useJwt": false
 		},
 		"publish": {
-			"url": "https://centra-test.telekom.de/smsservice/publish",
+			"url": "https://endpoint/publish",
 			"verb": "POST",
 			"useJwt": false
 		},
 		"stop": {
-			"url": "https://centra-test.telekom.de/smsservice/stop",
+			"url": "https://endpoint/stop",
 			"verb": "POST",
 			"useJwt": false
 		},
 		"validate": {
-			"url": "https://centra-test.telekom.de/smsservice/validate",
+			"url": "https://endpoint/validate",
 			"verb": "POST",
 			"useJwt": false
 		}
